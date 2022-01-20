@@ -1,10 +1,10 @@
 import { Link, Route, useParams, useRouteMatch } from "react-router-dom";
-import { useEffect } from "react/cjs/react.development";
 import { getSingleQuote } from "../api";
 import Comments from "../components/comments/Comments";
 import HighlightedQuote from "../components/quotes/HighlightedQuote.js";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
 import useHttp from "../use-http";
+import { useEffect } from 'react';
 const QuoteDetails = (props) => {
   const match = useRouteMatch();
   const { quoteId } = useParams();
